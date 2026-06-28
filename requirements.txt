@@ -1,0 +1,13 @@
+fastapi==0.110.0
+uvicorn==0.28.0
+pydantic==2.6.4
+PyMySQL==1.1.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+cloudinary==1.39.0
+firebase-admin==6.5.0
+sib-api-v3-sdk==7.6.0
+attrs==23.2.0
+python-multipart==0.0.9
+os==0.1.4
+json
