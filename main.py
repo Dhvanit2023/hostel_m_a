@@ -42,7 +42,14 @@ def get_connection():
         user="73UgtMJvpWa52hF.root",
         password=os.getenv("PASS"),
         database="hostel_app",
-        cursorclass=pymysql.cursors.DictCursor
+        cursorclass=pymysql.cursors.DictCursor,
+        
+        # ✅ IMPORTANT FIX
+        ssl={
+            "ssl": {
+                "ca": None
+            }
+        }
     )
 def send_brevo_email(to_email: str, subject: str, html_content: str) -> str:
     configuration = sib_api_v3_sdk.Configuration()
